@@ -1,0 +1,111 @@
+/home/cys/anaconda3/envs/py2/bin/python /home/cys/PycharmProjects/untitled1/test.py
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.198 seconds.
+Prefix dict has been built successfully.
+谁 是 苑茵 ?
+----------applying who_is_question----------
+
+PREFIX cns:<http://cnschema.org/>
+PREFIX cns_people:<http://cnschema.org/Person/>
+PREFIX cns_place:<http://cnschema.org/Place/>
+
+SELECT DISTINCT ?x0 WHERE {
+    cns_people:苑茵 cns:description ?x0
+}
+
+Result:  苑茵，辽宁本溪人。1942年毕业于复旦大学经济系。历任重庆妇女辅导院人事干事，重庆、天津、沈阳中央信托局业务科主任，天津人民银行科级行员，地质部干部英语班、中国音乐学院英语教师，北京市文史馆馆员。1995年加入中国作家协会。
+
+----------applying where_is_from_question----------
+Query not generated :(
+
+----------applying whose_nationality_question----------
+Query not generated :(
+
+丁洪奎 是 谁 ?
+----------applying who_is_question----------
+
+PREFIX cns:<http://cnschema.org/>
+PREFIX cns_people:<http://cnschema.org/Person/>
+PREFIX cns_place:<http://cnschema.org/Place/>
+
+SELECT DISTINCT ?x0 WHERE {
+    cns_people:丁洪奎 cns:description ?x0
+}
+
+Result:  现任天明化工厂总工程师、淮阳分厂厂长、盱眙县人大常委会副主任。
+
+----------applying where_is_from_question----------
+Query not generated :(
+
+----------applying whose_nationality_question----------
+Query not generated :(
+
+苏进木 来自 哪里 ?
+----------applying who_is_question----------
+Query not generated :(
+
+----------applying where_is_from_question----------
+
+PREFIX cns:<http://cnschema.org/>
+PREFIX cns_people:<http://cnschema.org/Person/>
+PREFIX cns_place:<http://cnschema.org/Place/>
+
+SELECT DISTINCT ?x0 WHERE {
+    cns_people:苏进木 cns:birthPlace ?x0
+}
+
+Result:  http://cnschema.org/Place/里马村
+
+----------applying whose_nationality_question----------
+Query not generated :(
+
+苑茵 是 哪个 族 的 ?
+----------applying who_is_question----------
+
+PREFIX cns:<http://cnschema.org/>
+PREFIX cns_people:<http://cnschema.org/Person/>
+PREFIX cns_place:<http://cnschema.org/Place/>
+
+SELECT DISTINCT ?x0 WHERE {
+    cns_people:苑茵 cns:description ?x0
+}
+
+Result:  苑茵，辽宁本溪人。1942年毕业于复旦大学经济系。历任重庆妇女辅导院人事干事，重庆、天津、沈阳中央信托局业务科主任，天津人民银行科级行员，地质部干部英语班、中国音乐学院英语教师，北京市文史馆馆员。1995年加入中国作家协会。
+
+----------applying where_is_from_question----------
+Query not generated :(
+
+----------applying whose_nationality_question----------
+
+PREFIX cns:<http://cnschema.org/>
+PREFIX cns_people:<http://cnschema.org/Person/>
+PREFIX cns_place:<http://cnschema.org/Place/>
+
+SELECT DISTINCT ?x0 WHERE {
+    cns_people:苑茵 cns:ethnicity ?x0
+}
+
+Result:  满族
+
+苑茵 的 民族 是 什么 ?
+----------applying who_is_question----------
+Query not generated :(
+
+----------applying where_is_from_question----------
+Query not generated :(
+
+----------applying whose_nationality_question----------
+
+PREFIX cns:<http://cnschema.org/>
+PREFIX cns_people:<http://cnschema.org/Person/>
+PREFIX cns_place:<http://cnschema.org/Place/>
+
+SELECT DISTINCT ?x0 WHERE {
+    cns_people:苑茵 cns:ethnicity ?x0
+}
+
+Result:  满族
+
+
+Process finished with exit code 0
